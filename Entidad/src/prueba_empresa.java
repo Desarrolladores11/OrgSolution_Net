@@ -26,7 +26,7 @@ public class prueba_empresa {
         terceraPrueba.setMonto_negativo("-12000");
         terceraPrueba.setConcepto("compra mouse");
         terceraPrueba.setUsuario("ivancito");
-        System.out.println(SegundaPrueba);
+        System.out.println(terceraPrueba);
 
     }
 }
