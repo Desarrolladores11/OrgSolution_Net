@@ -12,7 +12,7 @@ public class prueba_empresa {
         empleado SegundaPrueba = new empleado();
         System.out.println(SegundaPrueba);
 
-        SegundaPrueba.setEmpresa("DESARROLLADORES");
+        SegundaPrueba.setEmpresa("enrique");
         SegundaPrueba.setCorreo("www.11_desarroladores.com");
         SegundaPrueba.setRol("mantenimiento");
         SegundaPrueba.setNombre_em("manuelito");
