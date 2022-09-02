@@ -1,6 +1,5 @@
 package com.OrgSolutionNet.Proyecto.controllers;
 
-import com.OrgSolutionNet.Proyecto.Empleado;
 import com.OrgSolutionNet.Proyecto.Empresa;
 import org.springframework.web.bind.annotation.*;
 
