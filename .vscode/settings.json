@@ -1,0 +1,14 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "Proyecto\\.mvn\\wrapper\\maven-wrapper.jar"
+        ],
+        "exclude": [
+            "Proyecto/.mvn/wrapper/maven-wrapper.jar"
+        ]
+    },
+    "java.project.sourcePaths": [
+        "Proyecto\\.mvn\\wrapper"
+    ]
+}

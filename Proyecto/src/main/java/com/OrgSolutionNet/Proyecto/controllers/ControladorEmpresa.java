@@ -18,7 +18,7 @@ public class ControladorEmpresa {
         return "Ingresar Datos OrgSolution_Net";
     }
 
-    @PutMapping
+    @PutMapping 
     public String actualizarDatosEmpresa(){
         return "Actualizar Datos OrgSolution_Net";
     }

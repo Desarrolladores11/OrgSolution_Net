@@ -2,23 +2,34 @@ package com.OrgSolutionNet.Proyecto;
 
 public class Usuario {
 
+    private long id;
     private String nombre;
     private String email;
     private String empresaUsuario;
     private String rolUsuario;
 
     public Usuario() {
+        this.id = 0001;
         this.nombre = "Erika Carvajal";
         this.email = "mirollo19@hot";
         this.empresaUsuario = "Alcaldia";
         this.rolUsuario = "Contratista";
     }
 
-    public Usuario(String nombre, String email, String empresaEmpleado, String rolEmpleado) {
+    public Usuario(long id, String nombre, String email, String empresaEmpleado, String rolEmpleado) {
+        this.id = id;
         this.nombre = nombre;
         this.email = email;
-        this.empresaUsuario= empresaUsuario;
+        this.empresaUsuario = empresaUsuario;
         this.rolUsuario = getRolUsuario();
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getNombre() {
