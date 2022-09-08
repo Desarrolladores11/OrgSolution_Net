@@ -1,4 +1,4 @@
-package com.OrgSolutionNet.Proyecto;
+package com.OrgSolutionNet.Proyecto.Entities;
 
 public class Empresa {
     private String nombre;
@@ -6,19 +6,23 @@ public class Empresa {
     private String telefono;
     private String nit;
 
-    public Empresa() {
+   /* public Empresa() {
         this.nombre = "OrgSolution_Net";
         this.direccion = "Calle Desarrolladores11";
         this.telefono = "555 55 55";
         this.nit = "9808000101-1";
 
-    }
+    }*/
 
     public Empresa(String nombre, String direccion, String telefono, String nit) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
         this.nit = nit;
+    }
+
+    public Empresa() {
+
     }
 
     public String getNombre() {
@@ -53,13 +57,5 @@ public class Empresa {
         this.nit = nit;
     }
 
-    @Override
-    public String toString() {
-        return "Empresa{" +
-                "nombre='" + nombre + '\'' +
-                ", direccion='" + direccion + '\'' +
-                ", telefono=" + telefono +
-                ", nit=" + nit +
-                '}';
-    }
+
 }

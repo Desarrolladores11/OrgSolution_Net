@@ -1,9 +1,9 @@
 package com.OrgSolutionNet.Proyecto.controllers;
 
-import com.OrgSolutionNet.Proyecto.Empresa;
+import com.OrgSolutionNet.Proyecto.Entities.Empresa;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
+@RestController //permite que springboot sepa que la funcion que se expone, se expone a los usuarios
 @RequestMapping ("/empresa")
 public class ControladorEmpresa {
 

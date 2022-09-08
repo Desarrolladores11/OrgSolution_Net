@@ -1,4 +1,4 @@
-package com.OrgSolutionNet.Proyecto;
+package com.OrgSolutionNet.Proyecto.Entities;
 
 public class Usuario {
 
@@ -7,12 +7,7 @@ public class Usuario {
     private String empresaUsuario;
     private String rolUsuario;
 
-    public Usuario() {
-        this.nombre_em = "Erika Carvajal";
-        this.email = "mirollo19@hot";
-        this.empresaUsuario = "Alcaldia";
-        this.rolUsuario = "Contratista";
-    }
+
 
     public Usuario(String nombre_em, String email, String empresaUsuario, String rolUsuario) {
         this.nombre_em = nombre_em;
@@ -37,7 +32,7 @@ public class Usuario {
         this.email = email;
     }
 
-    public String getEmpresaUsurio() {
+    public String getEmpresaUsuario() {
         return empresaUsuario;
     }
 
@@ -53,13 +48,5 @@ public class Usuario {
         this.rolUsuario = rolUsuario;
     }
 
-    @Override
-    public String toString() {
-        return "Usuario{" +
-                "nombre_em='" + nombre_em + '\'' +
-                ", email='" + email + '\'' +
-                ", empresaUsuario='" + empresaUsuario + '\'' +
-                ", rolUsuario='" + rolUsuario + '\'' +
-                '}';
-    }
+
 }

@@ -1,21 +1,32 @@
-package com.OrgSolutionNet.Proyecto;
+package com.OrgSolutionNet.Proyecto.Entities;
 
 public class MovimientoDinero {
     private int monto;
     private int montosPositivo;
     private int montosNegativo;
     private String conceptoMovimiento;
-    private String usuario;
+    private String usuario_encargado;
 
-    public MovimientoDinero() {
-    }
+   /* public MovimientoDinero() {
+        this.monto = 10000;
+        this.montosPositivo = 7000;
+        this.montosNegativo = 4000;
+        this.conceptoMovimiento = "compra arepas";
+        this.usuario_encargado = "Erika";
+    }*/
 
-    public MovimientoDinero(int monto, int montosPositivo, int montosNegativo, String conceptoMovimiento, String usuario) {
+
+
+    public MovimientoDinero(int monto, int montosPositivo, int montosNegativo, String conceptoMovimiento, String usuario_encargado) {
         this.monto = monto;
         this.montosPositivo = montosPositivo;
         this.montosNegativo = montosNegativo;
         this.conceptoMovimiento = conceptoMovimiento;
-        this.usuario = usuario;
+        this.usuario_encargado = usuario_encargado;
+    }
+
+    public MovimientoDinero() {
+
     }
 
     public int getMonto() {
@@ -50,22 +61,13 @@ public class MovimientoDinero {
         this.conceptoMovimiento = conceptoMovimiento;
     }
 
-    public String getUsuario() {
-        return usuario;
+    public String getUsuario_encargado() {
+        return usuario_encargado;
     }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setUsuario_encargado(String usuario_encargado) {
+        this.usuario_encargado = usuario_encargado;
     }
 
-    @Override
-    public String toString() {
-        return "MovimientoDinero{" +
-                "monto=" + monto +
-                ", montosPositivo=" + montosPositivo +
-                ", montosNegativo=" + montosNegativo +
-                ", conceptoMovimiento='" + conceptoMovimiento + '\'' +
-                ", usuario='" + usuario + '\'' +
-                '}';
-    }
+
 }
