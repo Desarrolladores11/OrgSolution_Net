@@ -14,6 +14,7 @@ public class ListaUsuarios {
 
 
     public void addTask(Usuario usuario) {
+
         this.usuarioList.add(usuario);
     }
 
@@ -26,6 +27,7 @@ public class ListaUsuarios {
     }
 
     public List<Usuario> getUsuarioList() {
+
         return this.usuarioList;
     }
 

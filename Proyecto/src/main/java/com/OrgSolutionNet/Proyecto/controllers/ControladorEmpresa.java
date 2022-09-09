@@ -1,29 +1,37 @@
 package com.OrgSolutionNet.Proyecto.controllers;
 
-import com.OrgSolutionNet.Proyecto.Entities.Empresa;
+import com.OrgSolutionNet.Proyecto.Entities.ListaEmpresa;
+import com.OrgSolutionNet.Proyecto.Services.EmpresaService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController //permite que springboot sepa que la funcion que se expone, se expone a los usuarios
-@RequestMapping ("/empresa")
 public class ControladorEmpresa {
+    EmpresaService service; //Propiedad para asceder al servicio
 
-    @GetMapping ("")
-    public Empresa obtenerDatosEmpresa(){
-        Empresa pruebaEmpresa = new Empresa();
-        return pruebaEmpresa;
+    //Constructor
+    public ControladorEmpresa (){
+        this.service = new EmpresaService();
     }
 
-    @PostMapping
+    @GetMapping ("/empresa")
+    public ListaEmpresa obtenerDatosEmpresa(){
+        return  this.service.getlistaEmpresa();
+
+    }
+
+    @PostMapping ("/empresa")
     public String crearDatosEmpresa(){
+
         return "Ingresar Datos OrgSolution_Net";
     }
 
-    @PutMapping 
+    @PutMapping ("/empresa")
     public String actualizarDatosEmpresa(){
+
         return "Actualizar Datos OrgSolution_Net";
     }
 
-    @DeleteMapping
+    @DeleteMapping ("/empresa")
     public void eliminarDatosEmpresa(){
 
     }
