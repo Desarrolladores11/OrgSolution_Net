@@ -47,7 +47,7 @@ public class ControladorUsuario {
 
 
 
-   // @GetMapping ("/lista")
-    //public ListaUsuarios listaUsuarios(){
-       // return this.service.getLstUsuarios();
+// @GetMapping ("/lista")
+//public ListaUsuarios listaUsuarios(){
+// return this.service.getLstUsuarios();
 

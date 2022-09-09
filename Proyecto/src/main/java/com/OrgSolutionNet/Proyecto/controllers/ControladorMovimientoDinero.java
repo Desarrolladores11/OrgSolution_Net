@@ -11,20 +11,20 @@ import org.springframework.web.bind.annotation.*;
 public class ControladorMovimientoDinero {
 
 
-@GetMapping("")
-public MovimientoDinero obtenerDatosMovimientoDinero(){
-    MovimientoDinero movimientoDinero = new MovimientoDinero();
-    return movimientoDinero;
-        }
+    @GetMapping("")
+    public MovimientoDinero obtenerDatosMovimientoDinero(){
+        MovimientoDinero movimientoDinero = new MovimientoDinero();
+        return movimientoDinero;
+    }
 
-@PostMapping
-public String crearDatosMovimientoDinero(){
-    return "Ingresar Datos OrgSolution_Net";
-        }
+    @PostMapping
+    public String crearDatosMovimientoDinero(){
+        return "Ingresar Datos OrgSolution_Net";
+    }
 
-@PutMapping
-public String actualizarMovimientoDinero(){
-    return "Actualizar Datos OrgSolution_Net";
+    @PutMapping
+    public String actualizarMovimientoDinero(){
+        return "Actualizar Datos OrgSolution_Net";
     }
 
     @DeleteMapping

@@ -5,19 +5,19 @@ import javax.persistence.*;
 @Entity
 @Table(name="empresa")
 public class Empresa {
-   @Id
-   @GeneratedValue(strategy = GenerationType.AUTO)
-   private String nit;
-   @Column(name = "nombre")
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private String nit;
+    @Column(name = "nombre")
     private String nombre;
-   @Column(name = "direccion")
+    @Column(name = "direccion")
     private String direccion;
-   @Column(name = "telefono")
+    @Column(name = "telefono")
     private String telefono;
 
 
 
-   public Empresa() {
+    public Empresa() {
 
     }
 
