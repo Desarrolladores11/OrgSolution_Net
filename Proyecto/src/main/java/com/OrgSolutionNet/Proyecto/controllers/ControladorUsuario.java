@@ -18,16 +18,19 @@ public class ControladorUsuario {
 
     @GetMapping("/usuario")
     public ListaUsuarios ListaUsuarios() {
+
         return this.service.getLstUsuarios();
     }
 
     @PostMapping("/usuario")
     public String crearDatosUsuario() {
+
         return "Ingresar Datos OrgSolution_Net";
     }
 
     @PutMapping("/usuario")
     public String actualizarDatosUsuario() {
+
         return "Actualizar Datos OrgSolution_Net";
     }
 
