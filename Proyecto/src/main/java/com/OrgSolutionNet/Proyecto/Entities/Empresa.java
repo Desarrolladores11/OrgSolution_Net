@@ -1,17 +1,27 @@
-public class empresa {
-    private String nombre;
-    private String direccion;
-    private String telefono;
-    private String nit;
+package com.OrgSolutionNet.Proyecto.Entities;
 
-    public empresa() {
-        this.nombre = "desarrolladores_11";
-        this.nit = "123";
-        this.direccion = "calle falsa";
-        this.telefono = "666";
+import javax.persistence.*;
+
+@Entity
+@Table(name="empresa")
+public class Empresa {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private String nit;
+    @Column(name = "nombre")
+    private String nombre;
+    @Column(name = "direccion")
+    private String direccion;
+    @Column(name = "telefono")
+    private String telefono;
+
+
+
+    public Empresa() {
+
     }
 
-    public empresa(String nombre, String direccion, String telefono, String nit) {
+    public Empresa(String nombre, String direccion, String telefono, String nit) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
@@ -50,13 +60,5 @@ public class empresa {
         this.nit = nit;
     }
 
-    @java.lang.Override
-    public java.lang.String toString() {
-        return "empresa{" +
-                "nombre='" + nombre + '\'' +
-                ", direccion='" + direccion + '\'' +
-                ", telefono='" + telefono + '\'' +
-                ", nit='" + nit + '\'' +
-                '}';
-    }
+
 }
