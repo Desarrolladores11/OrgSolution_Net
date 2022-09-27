@@ -5,6 +5,7 @@ import javax.persistence.*;
 @Entity
 @Table(name="empresa")
 public class Empresa {
+<<<<<<< HEAD
    @Id
    @GeneratedValue(strategy = GenerationType.AUTO)
    @Column (name= "id")
@@ -20,6 +21,22 @@ public class Empresa {
 
    public Empresa() {
 
+=======
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private String nit;
+    @Column(name = "nombre")
+    private String nombre;
+    @Column(name = "direccion")
+    private String direccion;
+    @Column(name = "telefono")
+    private String telefono;
+
+
+
+    public Empresa() {
+
+>>>>>>> ec64639b09e20d6a85a65b695a092c11c37e1176
     }
 
     public Empresa(String nombre, String direccion, String telefono, String nit) {
