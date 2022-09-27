@@ -5,6 +5,10 @@ import javax.persistence.*;
 @Entity
 @Table(name="empresa")
 public class Empresa {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d93e24aea03c28ee602b793525f5957e5d052efe
    @Id
    @GeneratedValue(strategy = GenerationType.AUTO)
    @Column (name= "id")
@@ -17,9 +21,31 @@ public class Empresa {
     private String direccion;
    @Column(name= "telefono")
     private String telefono;
+<<<<<<< HEAD
 
    public Empresa() {
 
+=======
+
+   public Empresa() {
+
+=======
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private String nit;
+    @Column(name = "nombre")
+    private String nombre;
+    @Column(name = "direccion")
+    private String direccion;
+    @Column(name = "telefono")
+    private String telefono;
+
+
+
+    public Empresa() {
+
+>>>>>>> ec64639b09e20d6a85a65b695a092c11c37e1176
+>>>>>>> d93e24aea03c28ee602b793525f5957e5d052efe
     }
 
     public Empresa(String nombre, String direccion, String telefono, String nit) {

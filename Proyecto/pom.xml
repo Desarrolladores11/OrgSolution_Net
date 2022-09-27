@@ -42,13 +42,24 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 			<version>2.7.3</version>
 		</dependency>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> ec64639b09e20d6a85a65b695a092c11c37e1176
+>>>>>>> d93e24aea03c28ee602b793525f5957e5d052efe
 		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<version>42.5.0</version>
 		</dependency>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d93e24aea03c28ee602b793525f5957e5d052efe
 
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf -->
 		<dependency>
@@ -66,6 +77,11 @@
 			<groupId>org.thymeleaf.extras</groupId>
 			<artifactId>thymeleaf-extras-springsecurity5</artifactId>
 		</dependency>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> ec64639b09e20d6a85a65b695a092c11c37e1176
+>>>>>>> d93e24aea03c28ee602b793525f5957e5d052efe
 
 
 		<dependency>
