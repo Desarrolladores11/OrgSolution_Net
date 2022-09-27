@@ -1,28 +1,32 @@
 package com.OrgSolutionNet.Proyecto.Entities;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="empresa")
 public class Empresa {
+   @Id
+   @GeneratedValue(strategy = GenerationType.AUTO)
+   @Column (name= "id")
+   public long id;
+   @Column(name= "nit")
+   private String nit;
+   @Column(name= "nombre")
     private String nombre;
+   @Column(name= "direccion")
     private String direccion;
+   @Column(name= "telefono")
     private String telefono;
-    private String nit;
 
-   /* public Empresa() {
-        this.nombre = "OrgSolution_Net";
-        this.direccion = "Calle Desarrolladores11";
-        this.telefono = "555 55 55";
-        this.nit = "9808000101-1";
+   public Empresa() {
 
-    }*/
+    }
 
     public Empresa(String nombre, String direccion, String telefono, String nit) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
         this.nit = nit;
-    }
-
-    public Empresa() {
-
     }
 
     public String getNombre() {
@@ -57,5 +61,17 @@ public class Empresa {
         this.nit = nit;
     }
 
+    @Override
+    public String toString() {
+        return "Empresa{" +
+                "id=" + id +
+                ", nit='" + nit + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", telefono='" + telefono + '\'' +
+                '}';
+    }
 
+    public void setDone(boolean b) {
+    }
 }
